@@ -89,4 +89,99 @@
 
 - Install git and github and connect it with the local machine to get changes on github repository
 
+<hr>
 
+### <p align='center'>Fundamentals of Git </p>
+
+- Git is a version control system
+- Git take-care of the versions of your code
+- Git is important in life because no one in today's world give some code to another in the USB or any other devices so they all should use the github to connect for coding
+
+<hr>
+
+### <p align='center'>Branching & Merging</p>
+
+- the branch is the same copy of your code and we can make changes in that good after completion we can push it to the main branch
+- there are three types of branch `main Branch` , `Dev Branch` , `Feature Branch`
+
+1. `Main Branch` is the branch in which we have production ready code, like this is the branch to store the actual code.
+2. `Dev Branch` is the branch in which we test our overall code and after testing we are going to push it to the main Branch
+3. `Feature Branch` are the branches assign to each developer when they complete code they have to push to dev branch and then after testing it will be merged to the main branch
+<hr>
+
+### <p align='center'>Now how to create a Branch</p>
+
+- to create a branch we have to run the following code
+  
+  ``` git branch <branch Name>``` create a new branch
+
+  ``` git checkout <branch Name>``` In to the branch or switching in between the branches
+
+  ``` git checkout -b <branch Name>``` Create the branch and enter into that branch
+
+  ``` git checkout -b <branch Name>``` Create the branch and enter into that branch
+
+<hr>
+
+### <p align='center'>Now Merging the Branches</p>
+
+- if you created a branch with name of login and you want to merge your code into main so for that
+
+  ``` git checkout main ``` first switch to the main branch
+
+  ``` git merge login ``` merge the code of login branch into the main
+
+<hr>
+
+### <p align='center'>Merge Conflicts</p>
+
+- Merge happens when same line has edited by two different developers so it will create conflicts in your code that is called merge conflicts.
+
+<hr>
+
+### <p align='center'>Best Practices</p>
+
+1. whenever you wants to commit make sure you made small commits that will easy to resolve.
+
+2. First pull the latest code its make sure that you have the latest code in your machine
+3. always keep the name of the branches clear
+4. push code regularly
+
+<hr>
+
+### <p align='center'>Collaboration Basics</p>
+
+- Collaborations means team work like multiple developers working on same project
+  
+- `GitHub Issues` This is just to track what is going on in project and who will be going to fix it . If someone notice that there is an issue in the code or in a page so they will create an issue
+- `Commit Message` commit message should be meaningful.
+- `PR Request or Pull Request` stands for pull request we create a pull request when our code is ready to merge with the main and after Pull Request our team is going to see our code if its ready to merge into main so they merge it if there is issue so they give you feedback about that 
+
+<hr>
+
+### <p align='center'>Workflow of Pull Request</p>
+
+- Create branch write code in branch, push to your own branch than you have to create your own branch PR(Pull Request) , than team will review and merge your code.
+
+<hr>
+
+### <p align='center'>Code Review Purpose</p>
+
+- The team will identify your bugs before going to deploy it .
+- they suggest performance improvements
+
+<hr>
+
+### <p align='center'> Branch Naming Conventions</p>
+
+- if we are working on a feature so the branch name should be like 
+
+``` Feature/login```
+
+- if we are going to fix a bug so it should be 
+
+``` bug/fix-tracker ```
+
+- if we directly go to main branch and makes some changes break the branching flow so that is called `Hotfix`
+
+- 
