@@ -184,4 +184,12 @@
 
 - if we directly go to main branch and makes some changes break the branching flow so that is called `Hotfix`
 
+<hr>
+
+### <p align='center'>Git Workflow in Real Projects</p>
+
+- first of all we have to create multiple branches and than checkout to a specific branch and write code in that branch after this just push the code to your own branch and go to github and create a pull request and than merge into the dev branch or testing branch after the testing we can merge it into main branch
+
+- after pushing code into the branch we always send the link to the testing developer to check my pull request so that he/she check it properly and than merge into the main branch
+
 - 
