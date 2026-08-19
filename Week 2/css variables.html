@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css variables</title>
+    <style>
+        :root{
+            --default-radius:13px;
+            --default-color:blue;
+            --default-background:tomato;
+            --default-color:white;
+            --default-fontsize:20px;
+        }
+        .card{
+            border:3px solid var(--default-color);
+            border-radius:var(--default-radius);
+            background-color:var(--default-background);
+            color:var(--default-color);
+            padding:20px;
+            margin:20px;
+            font-size:var(--default-fontsize);
+        }
+    </style>
+</head>
+<body>
+    <div class="card">Card One</div>
+    <div class="card">Card Two</div>
+</body>
+</html>

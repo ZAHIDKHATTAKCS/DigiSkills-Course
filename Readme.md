@@ -192,4 +192,138 @@
 
 - after pushing code into the branch we always send the link to the testing developer to check my pull request so that he/she check it properly and than merge into the main branch
 
-- 
+<hr>
+
+### <p align='center'> Web & Browser Fundamentals</p>
+
+- Internet is actually the connection of billions devices
+  
+
+## <p align='center'>Week 2</p>
+
+
+### <p align='center'> Web Infrastructure</p>
+
+- HTTP & HTTPS are the rules of communications.
+- `HTTP` sending data from client side to the server side, the data is sending from the client side to the server in the plain text.
+- `HTTPS` is the secure version of HTTP. this Transfer data in encrypted form and the server decrypts the data and generates a response.
+
+- whenever we are going to search something in google so there is an icon of two lines when we click on that so it will show connections is secure which means that is running on HTTPS.
+
+<hr>
+
+### <p align='center'> Common HTTP Status Codes</p>
+
+- 200 ok Request Successful requested and data returned.
+- 201 Created - resource Created Successfully.
+- 301 Moved Permanently , Resource Redirected to a new url
+- 400 bad request - invalid request
+- 401 unauthorized - Unauthorized Required or access denied.
+
+<hr>
+
+### <p align='center'> HTML Document Structure</p>
+
+- `HTML` Stands for Hypertext Markup Language that is used to create/build the structure of the web page
+- `HTML` is like the skeleton
+- `css` is like the clothes
+- `Javascript` is like the brain
+
+- `<!DOCTYPE html>` is not the tag this is declaration for the browser to use the HTML 5 standard.
+- `<head></head>` this is providing the information to the browser or to the server
+- `<body></body>` is holding the content that is visible to the users
+- `<meta />` UTF-8 means that browser know about that which language is encrypted and showing on browser like English , Urdu
+- `<meta viewport>` meta tag view port is used for different screen sizes like if we use it in our code so it will behave accordingly on different screens
+- `<meta description>` this meta tag is used for `SEO` like to rank on google
+
+<hr>
+
+### <p align='center'> Non Semantic Tags</p>
+
+- `non semantic tags` are those tags that are not meaningful and they don't tell anything about the content they contain. and these tags group some tags like div tag that group multiple tags
+  
+- `Semantic Tags` are those tags that telling us what they are holding or contain. We use these code for easy to read code and seo friendly
+
+<hr>
+
+### <p align='center'> HTML Forms</p>
+
+- form is like when are going to login at social media platforms and they ask to enter data like your id your password etc these are called forms.
+
+<hr>
+
+### <p align='center'> CSS</p>
+
+- css is stands for cascading stylesheet. Without css everything will be looking very plain.
+- the syntax of the css is selector { property : value } 
+- we can write css in 3 ways
+- Inline css, Internal Css, External Css
+- selector of css 
+  1. Universal Selector 
+  2. Class selector
+  3. Id Selector 
+  4. Tag Selector
+
+- `Box Model` Box model consist of content, Padding, margin
+- `CSS Units` there are four different css units
+  1. px its working on pixels of the screen if you assign 30 pixels so it will take 30 pixels of the screen
+  2. % is taking the size according to the parent div
+  3. rem is around 32px
+  4. vh its depends on screens sizes
+
+<hr>
+
+### <p align='center'> Display Property</p>
+
+- `Display-inline` to show the boxes or content as an inline
+- `display-block` means to show the boxes or content as in block
+- `display-none` means to hide the box or any content 
+
+<hr>
+
+### <p align='center'> Positioning in CSS</p>
+
+- position relative
+- position absolute
+
+<hr>
+
+### <p align='center'> Responsive Design Basics</p>
+
+- `Media Queries` media queries are used to make your website looking good on all the screen sizes there are two types of media queries 
+  
+1. min-width 
+2. max-width
+
+<hr>
+
+### <p align='center'> Grid System</p>
+
+- grid template column
+- grid template rows
+- gap
+- fr - fractions
+
+<hr>
+
+### <p align='center'> CSS Variables</p>
+
+- css variables can be changeable 
+
+- so what if we have a lot of cards and want to change the background color of the cards so without variable we are going to each card style and change one by one their background color and that is what css variables are used for so you have to store the background color in one variable and if you wants to change the background color so change only the variable so all the website cards will be change automatically.
+
+- to store the variable we have to use `:root{}` where we should store the variables and use it by calling var(--padding etc)
+
+<hr>
+
+### <p align='center'> Tailwind Css Introduction </p>
+
+- Tailwindcss is the framework of the css
+- instead of Tailwindcss we have to use tailwindcss builtin classes
+- we can also create responsive layouts in tailwindcss
+- development is easy with the help of tailwindcss less code for development
+- maintenance of the website is quite easy in tailwindcss
+
+- in order to configure the tailwindcss we have two options
+- 1. CDN (Content delivery network)
+- 2. CLI (Command Line Interface)
