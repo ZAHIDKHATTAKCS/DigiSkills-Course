@@ -1,0 +1,228 @@
+/* Universal style for resting by default style */
+* {
+    padding: 0;
+    margin: 0;
+    color: var(--primary-color);
+}
+
+/* css variables */
+:root {
+    --primary-color: #ed9900;
+    --secondary-color: #edcf0c;
+    --background-color: #f5f5f5;
+    --background-color: #333;
+    --font-family: "Arial", sans-serif;
+}
+
+body {
+    background-color: var(--background-color);
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--background-color);
+    position: fixed;
+    top: 0;
+}
+
+.navbar-items {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    width: 50%;
+}
+
+.navbar-items li a {
+    text-decoration: none;
+    color: var(--primary-color);
+    font-size: 25px;
+    padding-inline: 10px;
+    padding-block: 10px;
+}
+
+.navbar-items li a:hover {
+    background-color: var(--primary-color);
+    padding-inline: 10px;
+    padding-block: 10px;
+    border-radius: 5px;
+    color: var(--background-color);
+}
+
+.hero {
+    height: 100vh;
+    background-image: url("../images/hero-section-bg.png");
+    background-size: cover;
+    background-position: cover;
+}
+
+.overlay {
+    background-color: rgba(0, 0, 0, 0.8);
+    height: 100%;
+    width: 100%;
+    color: var(--primary-color);
+    font-size: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.inquiry-button {
+    background-color: transparent;
+    color: var(--primary-color);
+    font-size: 30px;
+    padding-inline: 10px;
+    padding-block: 10px;
+    border: 1px solid var(--primary-color);
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+.inquiry-button:hover {
+    cursor: pointer;
+    background-color: var(--primary-color);
+    color: var(--background-color);
+    border: 1px solid var(--background-color);
+}
+
+.Card-Sections {
+    margin-top: 10px;
+    padding: 20px;
+}
+
+.cards-main-title {
+    color: var(--primary-color);
+    margin-bottom: 50px;
+    margin-top: 50px;
+    text-align: center;
+}
+
+.card {
+    border: 2px solid var(--primary-color);
+    width: 30%;
+    height: 30%;
+    border-radius: 10px;
+    color: var(--primary-color);
+}
+
+.card:hover {
+    box-shadow: 2px 2px 5px var(--secondary-color);
+}
+
+.card-top-image {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.card-body {
+    padding: 10px;
+}
+
+.card-title {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.card-description {
+    font-size: 20px;
+    text-align: center;
+}
+
+.card-button {
+    margin-top: 20px;
+    border: 1px solid var(--background-color);
+    color: var(--background-color);
+    font-size: 20px;
+    padding: 5px;
+    background-color: var(--primary-color);
+    border-radius: 5px;
+}
+
+.card-button:hover {
+    cursor: pointer;
+    border: 1px solid var(--primary-color);
+    background-color: transparent;
+    color: var(--primary-color);
+}
+
+.about-section {
+    margin-block: 20px;
+}
+.Team-members-cards{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin-block:20px;
+}
+.team-member{
+    border: 1px solid var(--primary-color);
+    text-align: center;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.member-img{
+    width: 300px;
+    height: 300px;
+    border-radius: 100%;
+    border: 2px solid transparent;
+}
+.team-member-description{
+    font-size: 20px;
+    padding: 10px;
+}
+
+.team-member:hover{
+    .member-img{
+        border: 2px solid var(--primary-color);
+    }
+}
+iframe{
+    border-radius: 20px;
+    width: 100%;
+}
+.contact-section{
+    padding: 20px;
+}
+
+@media (min-width:768px) {
+    .Card-Sections  {
+        display: flex;
+        justify-content: space-around;
+        align-items: stretch;
+    }
+}
+
+@media (max-width:768px) {
+    .Card-Sections{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .card {
+        width: 80%;
+        margin-top: 20px;
+    }
+
+    .Team-members-cards{
+        display: flex;
+        flex-direction: column;
+        gap: 19px;
+    }
+    .team-member{
+        width: 70%;
+    }
+}
